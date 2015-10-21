@@ -1,0 +1,26 @@
+<h1>Home</h1>
+
+<p>{{vm.msg}}</p>
+<h1 class="ms-font-xxl">Dashboards</h1>
+<span ng-hide="vm.dashboards.length > 0">
+	loading
+</span>
+<div>
+	<ul class="ms-List">
+		<div class="ms-List-item is-selectable" ng-repeat="dashboard in vm.dashboards track by dashboard.id" ng-click="vm.selectDashboard(dashboard.id)">
+			<span class="ms-ListItem-primaryText">{{dashboard.displayName}}</span>
+		</div>
+	</ul>
+</div>
+
+
+<h1 class="ms-font-xxl">Tiles</h1>
+<ul class="ms-List">
+	<div class="ms-List-item is-selectable" ng-repeat="tile in vm.tiles track by tile.id" ng-click="vm.insertTile(tile)">
+		<span class="ms-ListItem-primaryText">{{tile.title}}</span>
+	</div>
+</ul>
+
+<iframe src="" id="embedIframe" width="500" height="500" frameborder="0"></iframe>
+
+<p>Logged in as: {{userInfo.userName}}</p>
