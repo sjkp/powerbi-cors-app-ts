@@ -21,8 +21,6 @@
         "wwwroot/app/core/config.ts", "wwwroot/app/core/constants.ts",
         "wwwroot/app/core/core.adal.ts", "wwwroot/app/core/core.route.ts",
         "wwwroot/app/core/notFound.controller.ts",
-        "wwwroot/app/directives/office-ui-spinner/uiFabricSpinner.directive.controller.ts",
-        "wwwroot/app/directives/office-ui-spinner/uiFabricSpinner.directive.ts",
         "wwwroot/app/home/home.controller.ts",
         "wwwroot/app/home/home.route.ts"
     ]

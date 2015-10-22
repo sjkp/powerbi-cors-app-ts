@@ -8,7 +8,7 @@ module AngularTs.Core {
         $locationProvider.html5Mode(true).hashPrefix('!');
     }]);
       //ADAL
-    core.constant('appId', '5e972976-fc46-4c7c-9cc9-aade14198890');
+    core.constant('appId', '41a24112-3ebc-4f38-9c85-167e30e99379');
 	core.constant('powerBIResourceId', 'https://analysis.windows.net/powerbi/api');
     
     core.config(['$logProvider', function($logProvider: ng.ILogProvider) {
