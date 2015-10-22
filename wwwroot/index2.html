@@ -1,0 +1,24 @@
+<html>
+	<body>
+<script>
+	var win = window.open('https://login.microsoftonline.com/sjkpdevs.onmicrosoft.com/oauth2/authorize?response_type=id_token&client_id=41a24112-3ebc-4f38-9c85-167e30e99379&redirect_uri=https%3A%2F%2Fpowerbicors.azurewebsites.net%2F&state=88d1d031-33a5-421f-ba08-08211bd37b06&nux=1&client-request-id=a7805552-04c7-4a65-9444-45b30ebfeab4&x-client-SKU=Js&x-client-Ver=1.0.2&nonce=b3aecc4a-7025-4ef0-b436-a6d182992fb8');
+			var int = null;
+			function receiveMessage(event)
+{
+  // Do we trust the sender of this message?  (might be
+  // different from what we originally opened, for example).
+console.log(event);
+clearInterval(int);
+  // event.source is popup
+  // event.data is "hi there yourself!  the secret response is: rheeeeet!"
+}
+
+			window.addEventListener('message', receiveMessage, false);
+			
+			int = setInterval(function() {
+				console.log(new Date().getDate());
+				window.postMessage('hello from localhost', 'https://powerbicors.azurewebsites.net');
+			},100);			
+</script>
+	</body>
+</html>
