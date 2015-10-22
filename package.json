@@ -1,6 +1,6 @@
 {
-    "name": "angularTs",
-    "description": "angularTs Project Generated from ng-ts",
+    "name": "powerbi-cors-app-ts",
+    "description": "AngularJS typescript application that uses the ADAL to display tiles from PowerBI",
     "version": "0.0.0",
     "repository": {},
     "dependencies": {},
