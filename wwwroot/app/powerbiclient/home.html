@@ -1,0 +1,17 @@
+<h1>PowerBI client</h1>
+
+<p>{{vm.msg}}</p>
+<span ng-hide="vm.reports.length > 0">
+	loading
+</span>
+<div>
+	<ul class="ms-List">
+		<div class="ms-List-item is-selectable" ng-repeat="report in vm.reports track by report.id" ng-click="vm.selectReport(report.id)">
+			<span class="ms-ListItem-primaryText">{{report.name}}</span>
+		</div>
+	</ul>
+</div>
+
+
+<div id="reportContainer">
+<p>Logged in as: {{userInfo.userName}}</p>

@@ -16,6 +16,10 @@ module PowerBi.API {
 	{
 		
 	}
+
+	export interface IReport {
+		
+	}
 	
 	export interface IService 
 	{
@@ -26,6 +30,7 @@ module PowerBi.API {
 		getDashboards() : ng.IPromise<any>;
 		getTiles(dashboardId : string) : ng.IPromise<any>;
 		getDatasets() : ng.IPromise<ITile[]>;
+		getReports() : ng.IPromise<IReport[]>;
 	}
 	
 	export class Response<T> {
@@ -46,6 +51,10 @@ module PowerBi.API {
 		
 		public getDashboards() {
 			return this.doCall('dashboards');
+		}
+
+		public getReports() {
+			return this.doCall('reports');
 		}
 		
 		public getTiles(dashboardId: string)
