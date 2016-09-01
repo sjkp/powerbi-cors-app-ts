@@ -1,6 +1,8 @@
 # PowerBI-cors-app-ts
 This is a sample application that shows how to use AngularJS, TypeScript and the ADAL.js to display tiles from PowerBI in a single page web application. 
 
+**Updated the solution so it now also show case how to use the [powerbi javascript client](https://github.com/Microsoft/PowerBI-JavaScript)**  
+
 The following screenshot show what the sample looks like. It lists all dashboards, when a dashboard is clicked it lists all tiles from that dashboard. When a tile is click the tile is shown in the iframe. 
 
 When the iframe is clicked the powerbi report will open in a new window.
